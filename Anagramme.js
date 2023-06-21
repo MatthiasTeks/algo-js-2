@@ -1,6 +1,13 @@
 function isAnagram(str1, str2) {
     // Your code here...
-    return;
+    let r =  str1.localeCompare(str2);
+    if ( r == -1) {
+        r = true;
+        return r;
+    } else {
+        r = false;
+        return r;
+    }
 }
 
 console.assert(isAnagram("cinema", "iceman") === true, "Test 1 Failed");

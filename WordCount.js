@@ -1,7 +1,14 @@
 function wordCount(str) {
     // Your code here...
-    return;
+    let result = "";
+    if (str.length === 0) {
+        result = 0
+    } else {
+        result = str.split(" ").length; 
+    }
+    return result; 
 }
+
 
 console.assert(wordCount("Bonjour tout le monde") === 4, "Test 1 Failed");
 console.assert(wordCount("JavaScript est super") === 3, "Test 2 Failed");

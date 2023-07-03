@@ -1,6 +1,9 @@
 function wordCount(str) {
-    // Your code here...
-    return;
+    if (str.trim() === "") {
+        return 0;
+    } else {
+        return str.replace(/[.,\/#!$%\^&\*;:{}=\-_`~()]/g, "").trim().split(/\s+/).length;
+    }
 }
 
 console.assert(wordCount("Bonjour tout le monde") === 4, "Test 1 Failed");
